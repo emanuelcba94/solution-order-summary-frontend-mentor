@@ -3,6 +3,7 @@
     /* Primary */ 
     --clr-pale-blue: hsl(225, 100%, 94%);
     --clr--bright-blue: hsl(245, 75%, 52%);
+    --clr--bright-blue-o: hsla(245, 75%, 52%, 0.205);
     /* Neutral */
     --clr-very-pale-blue: hsl(225, 100%, 98%);
     --clr-desaturated-blue: hsl(224, 23%, 55%);
@@ -65,6 +66,7 @@ body {
     overflow: hidden;
     text-align: center;
     z-index: 1;
+    box-shadow: 0 1rem 1rem var(--clr--bright-blue-o);
 }
 
 .card__summary {
@@ -129,7 +131,7 @@ body {
     padding: 1rem 1rem;
     font-size: 0.9rem;
     font-weight: 700;
-    box-shadow: 0 0.5rem 1rem var(--clr-desaturated-blue);
+    box-shadow: 0 1rem 1rem var(--clr--bright-blue-o);
 }
 
 .card_pay:hover {
