@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- title -->
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+
+<body>
+
+  <picture class="card__picture">
+    <source media="(max-width: 375px)" srcset="./images/pattern-background-mobile.svg">
+    <img src="./images/pattern-background-desktop.svg" alt="desktop-wave">
+  </picture>
+
+  <main class="container">
+    <div class="card__container">
+      <img src="./images/illustration-hero.svg" alt="illustration-hero" class="card__img">
+      <div class="card__summary">
+        <h1 class="card__title">Order Summary</h1>
+        <p class="card__subtitle">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="card__plan"> 
+          <div class="card__flexbox">
+            <div class="card__flex">
+              <img src="./images/icon-music.svg" alt="icon-music">
+              <div class="flex-group">
+                <p class="card__plan--annual">Annual Plan</p>
+                <p class="card__plan--price">$59.99/year</p>
+              </div>
+            </div>
+            <p class="card__change">Change</p>
+          </div>
+        </div>
+        <button class="card_pay">Proceed to Payment</button>
+        <button class="card__cancel">Cancel Order</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emanuel Bonardo</a>.
+  </div> -->
+</body>
+</html>

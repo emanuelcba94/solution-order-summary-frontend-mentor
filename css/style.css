@@ -1,0 +1,168 @@
+:root {
+    --clr-white: hsl(225, 100%, 100%); 
+    /* Primary */ 
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr--bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    /* Typography */
+    --font-red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* end reset */
+
+body {
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: var(--font-red-hat-display);
+    background-color: var(--clr-pale-blue);
+}
+
+.card__picture {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card__picture img {
+    width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    align-items: center;
+}
+
+.card__container {
+    max-width: 420px;
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+.card__summary {
+    padding: 2.5rem 2.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card__title {
+    font-size: 2rem;
+    color: var(--clr-dark-blue);
+}
+.card__subtitle {
+    color: var(--clr-desaturated-blue);
+    font-size: 1rem;
+}
+
+.card__plan {
+    background-color: var(--clr-very-pale-blue);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+}
+
+.card__flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.card__plan--annual {
+    font-weight: 700;
+    color: var(--clr-dark-blue);
+}
+
+.card__plan--price {
+    color: var(--clr-desaturated-blue);
+}
+
+.card__change {
+    color: var(--clr--bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card__change:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.card_pay {
+    border: 0;
+    cursor: pointer;
+    color: var(--clr-white);
+    background-color: var(--clr--bright-blue);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 0.5rem 1rem var(--clr-desaturated-blue);
+}
+
+.card_pay:hover {
+    opacity: 0.8;
+}
+
+.card__cancel {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--clr-desaturated-blue);
+    font-weight: 700;
+}
+
+.card__cancel:hover {
+    color: var(--clr-dark-blue);
+}
+
+@media (max-width: 375px) {
+
+    .card__container {
+        margin: 0 1.5rem;
+    }
+
+    .card__summary {
+        padding: 1.5rem 1.5rem;
+        gap: 1;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+    .card__subtitle {
+        font-size: 1.1rem;
+    }
+}
